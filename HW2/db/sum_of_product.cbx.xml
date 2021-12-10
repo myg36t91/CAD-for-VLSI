@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="sum_of_product">
+		<CBX_INST_ENTRY INSTANCE_NAME="|sum_of_product|altmult_accum:Add0_rtl_0" CBX_FILE_NAME="mult_accum_13l1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
