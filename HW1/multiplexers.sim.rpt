@@ -1,0 +1,332 @@
+Simulator report for multiplexers
+Mon Nov 08 22:01:54 2021
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 122 nodes    ;
+; Simulation Coverage         ;      96.99 % ;
+; Total Number of Transitions ; 13163        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      96.99 % ;
+; Total nodes checked                                 ; 122          ;
+; Total output ports checked                          ; 166          ;
+; Total output ports with complete 1/0-value coverage ; 161          ;
+; Total output ports with no 1/0-value coverage       ; 5            ;
+; Total output ports with no 1-value coverage         ; 5            ;
+; Total output ports with no 0-value coverage         ; 5            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                                                        ;
++--------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                      ; Output Port Name                                                                                                               ; Output Port Type ;
++--------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |multiplexers|Add0~1                                                                                                           ; |multiplexers|Add0~1                                                                                                           ; sumout           ;
+; |multiplexers|Add0~1                                                                                                           ; |multiplexers|Add0~2                                                                                                           ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_2~1           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_2~1           ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_2~1           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_2~2           ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_2~5           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_2~5           ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_2~5           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_2~6           ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_2~9           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_2~9           ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_3~1           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_3~1           ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_3~1           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_3~2           ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_3~5           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_3~5           ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_3~5           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_3~6           ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_3~9           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_3~9           ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_3~9           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_3~10          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_3~13          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_3~13          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~1           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~1           ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~1           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~2           ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~5           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~5           ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~5           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~6           ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~9           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~9           ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~9           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~10          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~13          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~13          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~13          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~14          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~17          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_4~17          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~5           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~5           ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~5           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~6           ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~9           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~9           ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~9           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~10          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~13          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~13          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~13          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~14          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~17          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~17          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~17          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~18          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~21          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~21          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~21          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~22          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~25          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~25          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~5           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~5           ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~5           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~6           ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~9           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~9           ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~9           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~10          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~13          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~13          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~13          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~14          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~17          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~17          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~17          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~18          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~21          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~21          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~21          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~22          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~25          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~25          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~25          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~26          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~29          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~29          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~5           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~5           ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~5           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~6           ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~9           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~9           ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~9           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~10          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~13          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~13          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~13          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~14          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~17          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~17          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~17          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~18          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~21          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~21          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~21          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~22          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~25          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~25          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~25          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~26          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~29          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~29          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~29          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~30          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~33          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~33          ; sumout           ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~6           ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~6           ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~10          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~10          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~14          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~14          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~18          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~18          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~22          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~22          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~26          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~26          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~30          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~30          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~34          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~34          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~37          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~37          ; sumout           ;
+; |multiplexers|Add0~5                                                                                                           ; |multiplexers|Add0~5                                                                                                           ; sumout           ;
+; |multiplexers|Add0~5                                                                                                           ; |multiplexers|Add0~6                                                                                                           ; cout             ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~1                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~1                                                                   ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~1                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~2                                                                   ; cout             ;
+; |multiplexers|Add0~9                                                                                                           ; |multiplexers|Add0~9                                                                                                           ; sumout           ;
+; |multiplexers|Add0~9                                                                                                           ; |multiplexers|Add0~10                                                                                                          ; cout             ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~5                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~5                                                                   ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~5                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~6                                                                   ; cout             ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~1                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~1                                                                   ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~1                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~2                                                                   ; cout             ;
+; |multiplexers|Add0~13                                                                                                          ; |multiplexers|Add0~13                                                                                                          ; sumout           ;
+; |multiplexers|Add0~13                                                                                                          ; |multiplexers|Add0~14                                                                                                          ; cout             ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~1                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~1                                                                   ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~1                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~2                                                                   ; cout             ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~9                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~9                                                                   ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~9                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~10                                                                  ; cout             ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~5                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~5                                                                   ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~5                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~6                                                                   ; cout             ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~5                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~5                                                                   ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~5                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~6                                                                   ; cout             ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~13                                                                  ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~13                                                                  ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~13                                                                  ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~14                                                                  ; cout             ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~9                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~9                                                                   ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~9                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~10                                                                  ; cout             ;
+; |multiplexers|Add0~17                                                                                                          ; |multiplexers|Add0~17                                                                                                          ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~9                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~9                                                                   ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~9                                                                   ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~10                                                                  ; cout             ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~17                                                                  ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~17                                                                  ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~13                                                                  ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~13                                                                  ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~13                                                                  ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~14                                                                  ; cout             ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~13                                                                  ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~13                                                                  ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~13                                                                  ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~14                                                                  ; cout             ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~17                                                                  ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~17                                                                  ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~17                                                                  ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~18                                                                  ; cout             ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~17                                                                  ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~17                                                                  ; sumout           ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~21                                                                  ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~21                                                                  ; sumout           ;
+; |multiplexers|Y~27                                                                                                             ; |multiplexers|Y~27                                                                                                             ; combout          ;
+; |multiplexers|Y~31                                                                                                             ; |multiplexers|Y~31                                                                                                             ; combout          ;
+; |multiplexers|Y~35                                                                                                             ; |multiplexers|Y~35                                                                                                             ; combout          ;
+; |multiplexers|Y~39                                                                                                             ; |multiplexers|Y~39                                                                                                             ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|selnose[9]       ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|selnose[9]       ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[18]~93  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[18]~93  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[9]~128  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[9]~128  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[8]~111  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[8]~111  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|selnose[18]      ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|selnose[18]      ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[18]~85  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[18]~85  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[26]~129 ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[26]~129 ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[27]~130 ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[27]~130 ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[27]~76  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[27]~76  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[35]~52  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[35]~52  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[25]~78  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[25]~78  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[25]~70  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[25]~70  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[32]~55  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[32]~55  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[45]~131 ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[45]~131 ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[35]~60  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[35]~60  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[43]~132 ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[43]~132 ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[33]~62  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[33]~62  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[32]~63  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[32]~63  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[40]~39  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[40]~39  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[45]~42  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[45]~42  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[53]~133 ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[53]~133 ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[43]~44  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[43]~44  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[51]~134 ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[51]~134 ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[41]~46  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[41]~46  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[41]~135 ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[41]~135 ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[40]~47  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[40]~47  ; combout          ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[48]~23  ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[48]~23  ; combout          ;
+; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|w_decoder_node9w[8]                                                      ; |multiplexers|lpm_mult:Mult0|mult_nr01:auto_generated|w_decoder_node9w[8]                                                      ; combout          ;
+; |multiplexers|Y~24                                                                                                             ; |multiplexers|Y~24                                                                                                             ; combout          ;
+; |multiplexers|Y~25                                                                                                             ; |multiplexers|Y~25                                                                                                             ; combout          ;
+; |multiplexers|Y~26                                                                                                             ; |multiplexers|Y~26                                                                                                             ; combout          ;
+; |multiplexers|Y~43                                                                                                             ; |multiplexers|Y~43                                                                                                             ; combout          ;
+; |multiplexers|Y[0]                                                                                                             ; |multiplexers|Y[0]                                                                                                             ; padio            ;
+; |multiplexers|Y[1]                                                                                                             ; |multiplexers|Y[1]                                                                                                             ; padio            ;
+; |multiplexers|Y[2]                                                                                                             ; |multiplexers|Y[2]                                                                                                             ; padio            ;
+; |multiplexers|Y[3]                                                                                                             ; |multiplexers|Y[3]                                                                                                             ; padio            ;
+; |multiplexers|Y[4]                                                                                                             ; |multiplexers|Y[4]                                                                                                             ; padio            ;
+; |multiplexers|Y[5]                                                                                                             ; |multiplexers|Y[5]                                                                                                             ; padio            ;
+; |multiplexers|Y[6]                                                                                                             ; |multiplexers|Y[6]                                                                                                             ; padio            ;
+; |multiplexers|Y[7]                                                                                                             ; |multiplexers|Y[7]                                                                                                             ; padio            ;
+; |multiplexers|S[1]                                                                                                             ; |multiplexers|S[1]~corein                                                                                                      ; combout          ;
+; |multiplexers|S[0]                                                                                                             ; |multiplexers|S[0]~corein                                                                                                      ; combout          ;
+; |multiplexers|B[0]                                                                                                             ; |multiplexers|B[0]~corein                                                                                                      ; combout          ;
+; |multiplexers|A[0]                                                                                                             ; |multiplexers|A[0]~corein                                                                                                      ; combout          ;
+; |multiplexers|B[3]                                                                                                             ; |multiplexers|B[3]~corein                                                                                                      ; combout          ;
+; |multiplexers|B[1]                                                                                                             ; |multiplexers|B[1]~corein                                                                                                      ; combout          ;
+; |multiplexers|B[2]                                                                                                             ; |multiplexers|B[2]~corein                                                                                                      ; combout          ;
+; |multiplexers|A[3]                                                                                                             ; |multiplexers|A[3]~corein                                                                                                      ; combout          ;
+; |multiplexers|A[2]                                                                                                             ; |multiplexers|A[2]~corein                                                                                                      ; combout          ;
+; |multiplexers|A[1]                                                                                                             ; |multiplexers|A[1]~corein                                                                                                      ; combout          ;
++--------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                                                         ;
++-------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                     ; Output Port Name                                                                                                              ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~2          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~2          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~2          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~2          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~2          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~2          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~2          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~2          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[33]~54 ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[33]~54 ; combout          ;
++-------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                                                         ;
++-------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                     ; Output Port Name                                                                                                              ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~2          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_5~2          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~2          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_6~2          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~2          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_7~2          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~2          ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|op_8~2          ; cout             ;
+; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[33]~54 ; |multiplexers|lpm_divide:Div0|lpm_divide_7em:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_21f:divider|StageOut[33]~54 ; combout          ;
++-------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Nov 08 22:01:53 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off multiplexers -c multiplexers
+Info: Using vector source file "d:/altera/quartus/hw1/multiplexers.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      96.99 %
+Info: Number of transitions in simulation is 13163
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 155 megabytes
+    Info: Processing ended: Mon Nov 08 22:01:54 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
