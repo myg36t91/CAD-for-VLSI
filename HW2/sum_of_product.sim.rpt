@@ -1,0 +1,362 @@
+Simulator report for sum_of_product
+Fri Dec 03 06:54:12 2021
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 46 nodes     ;
+; Simulation Coverage         ;      44.27 % ;
+; Total Number of Transitions ; 2487         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      44.27 % ;
+; Total nodes checked                                 ; 46           ;
+; Total output ports checked                          ; 131          ;
+; Total output ports with complete 1/0-value coverage ; 58           ;
+; Total output ports with no 1/0-value coverage       ; 70           ;
+; Total output ports with no 1-value coverage         ; 70           ;
+; Total output ports with no 0-value coverage         ; 73           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                              ;
++--------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                            ; Output Port Name                                                                               ; Output Port Type ;
++--------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom           ; dataout20        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~DATAOUT1  ; dataout21        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~DATAOUT2  ; dataout22        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~DATAOUT3  ; dataout23        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~DATAOUT4  ; dataout24        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~DATAOUT5  ; dataout25        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~DATAOUT6  ; dataout26        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~DATAOUT7  ; dataout27        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~DATAOUT8  ; dataout28        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~DATAOUT9  ; dataout29        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~DATAOUT10 ; dataout30        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~DATAOUT11 ; dataout31        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~DATAOUT12 ; dataout32        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~DATAOUT13 ; dataout33        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~DATAOUT14 ; dataout34        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~DATAOUT15 ; dataout35        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom    ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; dataout20        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom    ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT2     ; dataout22        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom    ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT3     ; dataout23        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom    ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT4     ; dataout24        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom    ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT5     ; dataout25        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom    ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT6     ; dataout26        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom    ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT7     ; dataout27        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom    ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT8     ; dataout28        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom    ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT9     ; dataout29        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom    ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT10    ; dataout30        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom    ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT11    ; dataout31        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom    ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT12    ; dataout32        ;
+; |sum_of_product|C[0]                                                                 ; |sum_of_product|C[0]                                                                           ; padio            ;
+; |sum_of_product|C[1]                                                                 ; |sum_of_product|C[1]                                                                           ; padio            ;
+; |sum_of_product|C[2]                                                                 ; |sum_of_product|C[2]                                                                           ; padio            ;
+; |sum_of_product|C[3]                                                                 ; |sum_of_product|C[3]                                                                           ; padio            ;
+; |sum_of_product|C[4]                                                                 ; |sum_of_product|C[4]                                                                           ; padio            ;
+; |sum_of_product|C[5]                                                                 ; |sum_of_product|C[5]                                                                           ; padio            ;
+; |sum_of_product|C[6]                                                                 ; |sum_of_product|C[6]                                                                           ; padio            ;
+; |sum_of_product|C[7]                                                                 ; |sum_of_product|C[7]                                                                           ; padio            ;
+; |sum_of_product|C[8]                                                                 ; |sum_of_product|C[8]                                                                           ; padio            ;
+; |sum_of_product|C[9]                                                                 ; |sum_of_product|C[9]                                                                           ; padio            ;
+; |sum_of_product|C[10]                                                                ; |sum_of_product|C[10]                                                                          ; padio            ;
+; |sum_of_product|C[11]                                                                ; |sum_of_product|C[11]                                                                          ; padio            ;
+; |sum_of_product|C[12]                                                                ; |sum_of_product|C[12]                                                                          ; padio            ;
+; |sum_of_product|C[13]                                                                ; |sum_of_product|C[13]                                                                          ; padio            ;
+; |sum_of_product|C[14]                                                                ; |sum_of_product|C[14]                                                                          ; padio            ;
+; |sum_of_product|C[15]                                                                ; |sum_of_product|C[15]                                                                          ; padio            ;
+; |sum_of_product|clk                                                                  ; |sum_of_product|clk~corein                                                                     ; combout          ;
+; |sum_of_product|A[0]                                                                 ; |sum_of_product|A[0]~corein                                                                    ; combout          ;
+; |sum_of_product|A[1]                                                                 ; |sum_of_product|A[1]~corein                                                                    ; combout          ;
+; |sum_of_product|A[2]                                                                 ; |sum_of_product|A[2]~corein                                                                    ; combout          ;
+; |sum_of_product|A[3]                                                                 ; |sum_of_product|A[3]~corein                                                                    ; combout          ;
+; |sum_of_product|A[4]                                                                 ; |sum_of_product|A[4]~corein                                                                    ; combout          ;
+; |sum_of_product|A[5]                                                                 ; |sum_of_product|A[5]~corein                                                                    ; combout          ;
+; |sum_of_product|B[0]                                                                 ; |sum_of_product|B[0]~corein                                                                    ; combout          ;
+; |sum_of_product|B[1]                                                                 ; |sum_of_product|B[1]~corein                                                                    ; combout          ;
+; |sum_of_product|B[2]                                                                 ; |sum_of_product|B[2]~corein                                                                    ; combout          ;
+; |sum_of_product|B[3]                                                                 ; |sum_of_product|B[3]~corein                                                                    ; combout          ;
+; |sum_of_product|B[4]                                                                 ; |sum_of_product|B[4]~corein                                                                    ; combout          ;
+; |sum_of_product|B[5]                                                                 ; |sum_of_product|B[5]~corein                                                                    ; combout          ;
+; |sum_of_product|clk~clkctrl                                                          ; |sum_of_product|clk~clkctrl                                                                    ; outclk           ;
++--------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                    ;
++------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                      ; Output Port Name                                                                                        ; Output Port Type ;
++------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------+
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~20                    ; dataout0         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~21                    ; dataout1         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~22                    ; dataout2         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~23                    ; dataout3         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~24                    ; dataout4         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~25                    ; dataout5         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~26                    ; dataout6         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~27                    ; dataout7         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~28                    ; dataout8         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~29                    ; dataout9         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~30                    ; dataout10        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~31                    ; dataout11        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~32                    ; dataout12        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~33                    ; dataout13        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~34                    ; dataout14        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~35                    ; dataout15        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~36                    ; dataout16        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~37                    ; dataout17        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~38                    ; dataout18        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~39                    ; dataout19        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT1              ; dataout21        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT14             ; dataout34        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT15             ; dataout35        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data          ; dataout0         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT1  ; dataout1         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT2  ; dataout2         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT3  ; dataout3         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT4  ; dataout4         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT5  ; dataout5         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT6  ; dataout6         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT7  ; dataout7         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT8  ; dataout8         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT9  ; dataout9         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT10 ; dataout10        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT11 ; dataout11        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT12 ; dataout12        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT13 ; dataout13        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT14 ; dataout14        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT15 ; dataout15        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT16 ; dataout16        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT17 ; dataout17        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT18 ; dataout18        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT19 ; dataout19        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT20 ; dataout20        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT21 ; dataout21        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT22 ; dataout22        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT23 ; dataout23        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT24 ; dataout24        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT25 ; dataout25        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT26 ; dataout26        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT27 ; dataout27        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT28 ; dataout28        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT29 ; dataout29        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT30 ; dataout30        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT31 ; dataout31        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT32 ; dataout32        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT33 ; dataout33        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT34 ; dataout34        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT35 ; dataout35        ;
+; |sum_of_product|reg_7                                                                          ; |sum_of_product|reg_7                                                                                   ; regout           ;
+; |sum_of_product|reg_5                                                                          ; |sum_of_product|reg_5                                                                                   ; regout           ;
+; |sum_of_product|reg_3                                                                          ; |sum_of_product|reg_3                                                                                   ; regout           ;
+; |sum_of_product|output_valid                                                                   ; |sum_of_product|output_valid                                                                            ; padio            ;
+; |sum_of_product|en                                                                             ; |sum_of_product|en~corein                                                                               ; combout          ;
+; |sum_of_product|A[7]                                                                           ; |sum_of_product|A[7]~corein                                                                             ; combout          ;
+; |sum_of_product|B[7]                                                                           ; |sum_of_product|B[7]~corein                                                                             ; combout          ;
+; |sum_of_product|input_valid                                                                    ; |sum_of_product|input_valid~corein                                                                      ; combout          ;
+; |sum_of_product|reg_7~feeder                                                                   ; |sum_of_product|reg_7~feeder                                                                            ; combout          ;
+; |sum_of_product|reg_5~feeder                                                                   ; |sum_of_product|reg_5~feeder                                                                            ; combout          ;
+; |sum_of_product|reg_3~feeder                                                                   ; |sum_of_product|reg_3~feeder                                                                            ; combout          ;
++------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                    ;
++------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                      ; Output Port Name                                                                                        ; Output Port Type ;
++------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------+
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~20                    ; dataout0         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~21                    ; dataout1         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~22                    ; dataout2         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~23                    ; dataout3         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~24                    ; dataout4         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~25                    ; dataout5         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~26                    ; dataout6         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~27                    ; dataout7         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~28                    ; dataout8         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~29                    ; dataout9         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~30                    ; dataout10        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~31                    ; dataout11        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~32                    ; dataout12        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~33                    ; dataout13        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~34                    ; dataout14        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~35                    ; dataout15        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~36                    ; dataout16        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~37                    ; dataout17        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~38                    ; dataout18        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~39                    ; dataout19        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT1              ; dataout21        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT13             ; dataout33        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT14             ; dataout34        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom              ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|mult_atom~DATAOUT15             ; dataout35        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data          ; dataout0         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT1  ; dataout1         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT2  ; dataout2         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT3  ; dataout3         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT4  ; dataout4         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT5  ; dataout5         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT6  ; dataout6         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT7  ; dataout7         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT8  ; dataout8         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT9  ; dataout9         ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT10 ; dataout10        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT11 ; dataout11        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT12 ; dataout12        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT13 ; dataout13        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT14 ; dataout14        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT15 ; dataout15        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT16 ; dataout16        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT17 ; dataout17        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT18 ; dataout18        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT19 ; dataout19        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT20 ; dataout20        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT21 ; dataout21        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT22 ; dataout22        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT23 ; dataout23        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT24 ; dataout24        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT25 ; dataout25        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT26 ; dataout26        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT27 ; dataout27        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT28 ; dataout28        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT29 ; dataout29        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT30 ; dataout30        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT31 ; dataout31        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT32 ; dataout32        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT33 ; dataout33        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT34 ; dataout34        ;
+; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_data ; |sum_of_product|altmult_accum:Add0_rtl_0|mult_accum_13l1:auto_generated|multout_atom~load_dataDATAOUT35 ; dataout35        ;
+; |sum_of_product|reg_7                                                                          ; |sum_of_product|reg_7                                                                                   ; regout           ;
+; |sum_of_product|reg_5                                                                          ; |sum_of_product|reg_5                                                                                   ; regout           ;
+; |sum_of_product|reg_3                                                                          ; |sum_of_product|reg_3                                                                                   ; regout           ;
+; |sum_of_product|output_valid                                                                   ; |sum_of_product|output_valid                                                                            ; padio            ;
+; |sum_of_product|en                                                                             ; |sum_of_product|en~corein                                                                               ; combout          ;
+; |sum_of_product|A[6]                                                                           ; |sum_of_product|A[6]~corein                                                                             ; combout          ;
+; |sum_of_product|A[7]                                                                           ; |sum_of_product|A[7]~corein                                                                             ; combout          ;
+; |sum_of_product|B[6]                                                                           ; |sum_of_product|B[6]~corein                                                                             ; combout          ;
+; |sum_of_product|B[7]                                                                           ; |sum_of_product|B[7]~corein                                                                             ; combout          ;
+; |sum_of_product|input_valid                                                                    ; |sum_of_product|input_valid~corein                                                                      ; combout          ;
+; |sum_of_product|reg_7~feeder                                                                   ; |sum_of_product|reg_7~feeder                                                                            ; combout          ;
+; |sum_of_product|reg_5~feeder                                                                   ; |sum_of_product|reg_5~feeder                                                                            ; combout          ;
+; |sum_of_product|reg_3~feeder                                                                   ; |sum_of_product|reg_3~feeder                                                                            ; combout          ;
++------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Dec 03 06:54:11 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off sum_of_product -c sum_of_product
+Info: Using vector source file "d:/altera/quartus/sum_of_product/sum_of_product.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      44.27 %
+Info: Number of transitions in simulation is 2487
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 160 megabytes
+    Info: Processing ended: Fri Dec 03 06:54:12 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
