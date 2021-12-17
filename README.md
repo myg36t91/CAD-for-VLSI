@@ -1,5 +1,4 @@
 # CAD-for-VLSI
-NTNU CS Course HW_ref
  - #1 multiplexer
 ![image](https://user-images.githubusercontent.com/45507258/146597929-d3554f13-8dde-48a7-8992-ce3cc4f76f08.png)
 
