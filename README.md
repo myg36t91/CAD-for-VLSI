@@ -1,7 +1,7 @@
 # CAD-for-VLSI
 NTNU CS Course HW_ref
  - #1 multiplexer
-![image](https://user-images.githubusercontent.com/45507258/145569804-ae8a0e39-3006-4635-a3d3-e06ca0f93c59.png)
+![image](https://user-images.githubusercontent.com/45507258/146597929-d3554f13-8dde-48a7-8992-ce3cc4f76f08.png)
 
  - #2 using register implement formula
 ![image](https://user-images.githubusercontent.com/45507258/145569966-2e10a5c2-86ef-4b66-a88f-e72db82093f3.png)
