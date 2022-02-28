@@ -9,5 +9,3 @@
  - #3 finite-state machine
 ![image](https://user-images.githubusercontent.com/45507258/145570128-6c046066-8835-4189-97d8-eb0329af6a27.png)
 
- - #4 64-bit random number generator
-![image](https://user-images.githubusercontent.com/45507258/146597137-fb22e846-48e1-444f-b93e-3d6ca595f21a.png)
